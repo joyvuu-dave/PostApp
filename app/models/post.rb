@@ -12,8 +12,5 @@
 
 class Post < ActiveRecord::Base
   belongs_to :user
-
-  def author
-    user
-  end
+  alias_attribute :author, :user
 end
