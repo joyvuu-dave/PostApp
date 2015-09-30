@@ -19,6 +19,7 @@ There's a test suite you can run with ```rspec```. You can also load a seed data
 ## IMAGES
 - POST /api/images
   - adds an image to a post
+  - params: ```image: { url: String, post_id: Integer }```
 - DELETE /api/images/:id
   - removes an image
 
