@@ -3,11 +3,15 @@
 # Table name: posts
 #
 #  id         :integer          not null, primary key
-#  user_id    :integer
+#  author_id  :integer
 #  title      :string
 #  content    :text
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
+#
+# Indexes
+#
+#  index_posts_on_author_id  (author_id)
 #
 
 require 'rails_helper'

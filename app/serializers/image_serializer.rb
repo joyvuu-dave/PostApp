@@ -13,8 +13,7 @@
 #  index_images_on_post_id  (post_id)
 #
 
-class Image < ActiveRecord::Base
-  belongs_to :post
-
-  validates :post, presence: true
+class ImageSerializer < ActiveModel::Serializer
+  attributes :id,
+             :url
 end

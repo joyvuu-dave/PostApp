@@ -10,6 +10,12 @@
 #  updated_at :datetime         not null
 #  ancestry   :string
 #
+# Indexes
+#
+#  index_comments_on_ancestry  (ancestry)
+#  index_comments_on_post_id   (post_id)
+#  index_comments_on_user_id   (user_id)
+#
 
 require 'rails_helper'
 

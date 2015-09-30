@@ -17,11 +17,12 @@
 #  index_comments_on_user_id   (user_id)
 #
 
-class Comment < ActiveRecord::Base
-  belongs_to :post
-  belongs_to :user
-  has_ancestry
+class CommentSerializer < ActiveModel::Serializer
+  attributes :id,
+             :body,
+             :children
 
-  validates :post, presence: true
-  validates :user, presence: true
+  def children
+    ActiveModel::ArraySerializer.new(object.children, each_serializer: CommentSerializer)
+  end
 end

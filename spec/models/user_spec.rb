@@ -13,7 +13,7 @@ require 'rails_helper'
 
 RSpec.describe User, type: :model do
   it 'can create a user' do 
-    user = FactoryGirl.create(:user, name: 'Barack Obama', city: 'Washington D.C')
+    user = FactoryGirl.create(:user, name: 'Donald Trump', city: 'New York')
     expect(user).to be_a(User)
   end
 end

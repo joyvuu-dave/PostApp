@@ -32,7 +32,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem 'active_model_serializers', '~> 0.8.0'
-gem 'ancestry'
+gem 'ancestry', github: 'stefankroes/ancestry'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -50,4 +50,6 @@ group :development do
   gem 'spring'
   gem 'annotate'
   gem 'pry-rails'
+  gem 'better_errors'
+  gem 'binding_of_caller'
 end
