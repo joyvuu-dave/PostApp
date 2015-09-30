@@ -13,6 +13,7 @@ There's a test suite you can run with ```rspec```. You can also load a seed data
   - returns a post
 - PATCH /api/posts/:id
   - updates a post
+  - params: ```post: { title: String, content: Text, author_id: Integer }``` Note: each key optional
 - DELETE /api/posts/:id
   - removes a post
 
