@@ -23,7 +23,7 @@ There's a test suite you can run with ```rspec```. You can also load a seed data
   - removes an image
 
 ## COMMENTS
-- GET /api/comments?post_id=<Integer>
+- GET /api/comments?post_id=Integer
   - returns all comments associated with a post
 - POST /api/comments
   - adds a comment to a post
